@@ -1,0 +1,12 @@
+@startuml
+
+class Impresora {
+- modelo: String
+- cantidadHojas: int
+- tipoConexion: String
+- fechaFabricacion: String
++ Impresora(modelo: String,  tipoConexion: String, fechaFabricacion: String ): Impresora
+-tienePapel(): bolean
++ imprimir(texto: String): void
+}
+@enduml
